@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function simpleNumber(start,end) {
+    while (start <= end) {
+    if (start == 0 || start == 1 || start == 2)  {
+        console.log(2);
+        console.log(3);
+        start = 3;
+    }
+    less = 0;
+    i = 2;
+    while (i <= start/2) {
+        if (start % i == 0) {
+            less = false;
+            break
+        } else {
+            less = true
+        }
+        ++i;
+    }
+    if (less == true ) {
+        console.log(start)
+    }
+    ++start;
+}
+}
+var n = +prompt("введите начало интервала"), m = +prompt("введите конец интервала"), i , less ;
+
+simpleNumber(n,m);
+
+</script>

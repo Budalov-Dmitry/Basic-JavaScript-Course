@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function countBasketPrice(array){
+    var outcome = 0, x;
+    for (item of array) {
+        x = item.price * item.quantity;
+        outcome +=x;
+    }
+    return outcome
+}
+
+var goods = [
+    {
+        title: "Товар 1",
+        price: 100,
+        quantity: 1
+    },
+    {
+        title: "Товар 1",
+        price: 200,
+        quantity: 2
+    },
+    {
+        title: "Товар 1",
+        price: 300,
+        quantity: 3
+    },
+    {
+        title: "Товар 1",
+        price: 400,
+        quantity: 4
+    },
+];
+
+
+alert(countBasketPrice(goods))
+        
+
+</script>

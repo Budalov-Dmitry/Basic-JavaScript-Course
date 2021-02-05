@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function countBasketPrice(array){
+    var outcome = 0, x;
+    for (item of array) {
+        x = item.price * item.quantity;
+        outcome +=x;
+    }
+    return outcome
+}
+function basketGoods (n) {
+    var goods = [];
+    for ( var i = 1; i <= n; i++ ) {
+        var title = prompt("название товара " + i), price = +prompt("цена товара " + i), quantity = prompt("кол-во товаров"); 
+        good = {
+            title:title,
+            price:price,
+            quantity:quantity
+        }
+        goods.push(good);
+    }
+    return goods;
+}
+
+var basketSize = +prompt("Сколько товаров в корзине"), goods = basketGoods(basketSize);
+
+
+alert(countBasketPrice(goods))
+        
+
+</script>
