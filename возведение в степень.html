@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+        
+function power(val, pow) {
+    if (pow == 1) {
+         return val
+    } else {
+         return val * power(val, pow - 1)
+    }
+}
+
+var x = +prompt("введите основание"), y = +prompt("введите степень");
+
+alert("результат " + power(x, y))    
+
+</script>

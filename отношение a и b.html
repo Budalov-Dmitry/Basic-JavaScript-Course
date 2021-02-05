@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+        
+function summ(a,b){
+    return a+b;
+    }
+function diff(a,b){
+    return a-b;
+    }
+function prod(a,b){
+    return a*b;
+    }
+function ratio(a,b){
+    return a/b;
+    }      
+
+var a = +prompt("введите a"), b = +prompt("введите b"), ress = 0;
+
+if (a >= 0 && b >= 0) {
+    ress = diff(a,b);
+} else if (a < 0 && b < 0) {
+    ress = prod(a,b); 
+} else {
+    ress = summ(a,b);
+}
+alert("результат " + ress);
+
+</script>

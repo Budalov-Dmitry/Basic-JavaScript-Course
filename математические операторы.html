@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+        
+function summ(a,b){
+    return a+b;
+    }
+function diff(a,b){
+    return a-b;
+    }
+function prod(a,b){
+    return a*b;
+    }
+function ratio(a,b){
+    return a/b;
+    }      
+function mathOperation(arg1, arg2, operation){
+    switch(operation){
+        case "+":
+            return summ(arg1,arg2);
+            break;
+        case "-":
+            return diff(arg1,arg2);
+            break;
+        case "*":
+            return prod(arg1,arg2);
+            break;
+        case "/":
+            return ratio(arg1,arg2);
+            break;
+        default:
+            alert("неверный знак");
+    }
+}
+    
+var a = +prompt("введите a"), b = +prompt("введите b"), sign = prompt("введите знак операции");
+
+alert("результат " + mathOperation(a, b, sign));
+
+</script>
