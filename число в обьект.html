@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+        
+    function stringToObject (n) {
+        if (n > 999) {
+            var empty = {};
+            console.log("вы ввели неверное число " + empty);
+        }
+        var arrayOfStrings = n.split("",3).reverse();
+        var obj = new NumderObject(arrayOfStrings);
+        console.log(obj);
+    }
+    function NumderObject (array){
+        this.units = array[0];
+        this.dozens = array[1];
+        this.hundreds = array[2];
+    }
+    var n = prompt("введите чило от 0 до 999");
+    stringToObject (n);
+    
+</script>
