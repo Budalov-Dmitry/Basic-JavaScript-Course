@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+tr {
+    border: 1px solid grey;
+    
+}
+
+td {
+    border: 1px solid grey;
+    width: 2px;
+    height: 2px;
+    font-size: 128px;
+}
+
+.color {
+    background-color: darkgray;
+}
+.rotatable{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
