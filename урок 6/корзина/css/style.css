@@ -1,0 +1,21 @@
+.basket {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.shop {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
